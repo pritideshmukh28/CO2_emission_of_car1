@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2 emission of cars </title>
+    <h1> CO2 emission of cars </h1>
+</head>
+
+<body>
+    <style>
+        body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #0c0000;
+                text-shadow: rgb(26, 10, 10);
+                font-size:20px;
+                background-image: url(https://media.istockphoto.com/id/961826946/photo/carbon-dioxide-emissions-control-concept-3d-rendering-of-co2-cloud-on-fresh-spring-meadow-with.jpg?s=612x612&w=0&k=20&c=BRMi31Y1JqX8q_hQz7HSoEd9RmoGAKqssoWL4tgO3vI=);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            h1 {
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 80px;
+                color: rgb(185, 43, 43);
+                text-align: center;
+            }
+        form  {
+                position: absolute;
+                left: 600px;
+                box-shadow: #000;
+            }
+
+           c :hover{
+            
+            cursor: pointer;
+            background-color: #ff0707;
+            color: #000;
+            }
+
+    </style>
+
+
+
+    
+    <form method="GET" action="/emission_pred">
+
+        
+        <label>Car:</label>
+        <select name = "Car">
+            <option value = "Mercedes">Mercedes</option>
+            <option value = "Ford">Ford</option>
+            <option value = "Skoda">Skoda</option>
+            <option value = "Audi">Audi</option>
+            <option value = "BMW">BMW</option>
+            <option value = "Opel">Opel</option>
+            <option value = "Volvo">Volvo</option>
+            <option value = "VW">VW</option>
+            <option value = "Mitsubishi">Mitsubishi</option>
+            <option value = "Hyundai">Hyundai</option>
+            <option value = "Suzuki">Suzuki</option>
+            <option value = "Honda">Honda</option>
+            <option value = "Hundai">Hundai</option>
+            <option value = "Mini">Mini</option>
+            <option value = "Fiat">Fiat</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Model:</label>
+
+
+        <select name = "Model">
+            <option value = 'Fiesta'>Fiesta</option>
+            <option value = "Aygo">Aygo</option>
+            <option value = "A6">A6</option>
+            <option value = "Insignia">Insignia</option>
+            <option value = "C-Class">C-Class</option>
+            <option value = "Octavia">Octavia</option>
+            <option value = "S60">S60</option>
+            <option value = "CLA">CLA</option>
+            <option value = "A4">A4</option>
+            <option value = "V70">V70</option>
+            <option value = "Focus">Focus</option>
+            <option value = "E-Class">E-Class</option>
+            <option value = "XC70">XC70</option>
+            <option value = "B-Max">B-Max</option>
+            <option value = "Zafira">Zafira</option>
+            <option value = 'Mondeo'>Mondeo</option>
+            <option value = "Rapid">Rapid</option>
+            <option value = "Space Star">Space Star</option>
+            <option value = "Astra">Astra</option>
+            <option value = "I30">I30</option>
+            <option value = "Civic">Civic</option>
+            <option value = "Swift">Swift</option>
+            <option value = "I20">I20</option>
+            <option value = "A1">A1</option>
+            <option value = "A-Class">A-Class</option>
+            <option value = "Fabia">Fabia</option>
+            <option value = "Cooper">Cooper</option>
+        
+        </select>
+
+        <br>
+        <br>
+
+        <label>Volume:</label>
+        <input type = "text" name = "Volume" placeholder="Enter Volume">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Weight:</label>
+        <input type = "text" name = "Weight" placeholder="Enter Weight">
+        </select>
+
+        
+
+        <br>
+        <br>
+
+        
+
+
+        <c><input type = "submit" value="SUBMIT"></c>
+
+        <br>
+
+        <h4><strong>CO2 emission is : <b> {{ prediction }} /- Rs.</b> Only </strong></h4>
+
+
+    </form>
+
+
+</body>
+</html>
